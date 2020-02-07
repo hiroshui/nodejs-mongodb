@@ -14,7 +14,7 @@ pipeline:
   build_image:
     dockerfile: Dockerfile
     image: banzaicloud/kaniko-plugin
-    repo: '{{ .CICD_REPO }}'
+    repo: hub.docker.com/hiroshui/hiroshui-cloud
     secretFrom:
       DOCKER_PASSWORD:
         keyRef: password
